@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SalesWebMVC.Data;
@@ -9,20 +10,22 @@ using SalesWebMVC.Data;
 namespace SalesWebMVC.Migrations
 {
     [DbContext(typeof(SalesWebMVCContext))]
-    [Migration("20200124202136_OtherEntities")]
-    partial class OtherEntities
+    [Migration("20200213014842_InitialSQLServer")]
+    partial class InitialSQLServer
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "2.1.14-servicing-32113")
-                .HasAnnotation("Relational:MaxIdentifierLength", 64);
+                .HasAnnotation("Relational:MaxIdentifierLength", 128)
+                .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("SalesWebMVC.Models.Department", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Name");
 
@@ -34,7 +37,8 @@ namespace SalesWebMVC.Migrations
             modelBuilder.Entity("SalesWebMVC.Models.SalesRecord", b =>
                 {
                     b.Property<int>("id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<double>("Amount");
 
@@ -54,7 +58,8 @@ namespace SalesWebMVC.Migrations
             modelBuilder.Entity("SalesWebMVC.Models.Seller", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<double>("BaseSalary");
 
@@ -62,9 +67,9 @@ namespace SalesWebMVC.Migrations
 
                     b.Property<int?>("DepartmentId");
 
-                    b.Property<string>("Name");
+                    b.Property<string>("Email");
 
-                    b.Property<string>("email");
+                    b.Property<string>("Name");
 
                     b.HasKey("Id");
 

@@ -12615,11 +12615,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Estudos Web Dev\\Estudos de C# e .NET\\C# COMPLETO 2020-Udemy-Nelio\\ws-vs2019\\S17-Sist-Web-ASP-NET-CORE\\SalesWebMVC\\SalesWebMVC\\SalesWebMVC.csproj",
+      "projectUniqueName": "D:\\Estudos Web Dev\\Estudos de C# e .NET\\C# COMPLETO 2020-Udemy-Nelio\\ws-vs2019\\S17-Sist-Web-ASP-NET-CORE\\SalesWebMVCSQLServer\\SalesWebMVC-dotNet-Core-MSSQL\\SalesWebMVC\\SalesWebMVC.csproj",
       "projectName": "SalesWebMVC",
-      "projectPath": "D:\\Estudos Web Dev\\Estudos de C# e .NET\\C# COMPLETO 2020-Udemy-Nelio\\ws-vs2019\\S17-Sist-Web-ASP-NET-CORE\\SalesWebMVC\\SalesWebMVC\\SalesWebMVC.csproj",
+      "projectPath": "D:\\Estudos Web Dev\\Estudos de C# e .NET\\C# COMPLETO 2020-Udemy-Nelio\\ws-vs2019\\S17-Sist-Web-ASP-NET-CORE\\SalesWebMVCSQLServer\\SalesWebMVC-dotNet-Core-MSSQL\\SalesWebMVC\\SalesWebMVC.csproj",
       "packagesPath": "C:\\Users\\conra\\.nuget\\packages\\",
-      "outputPath": "D:\\Estudos Web Dev\\Estudos de C# e .NET\\C# COMPLETO 2020-Udemy-Nelio\\ws-vs2019\\S17-Sist-Web-ASP-NET-CORE\\SalesWebMVC\\SalesWebMVC\\obj\\",
+      "outputPath": "D:\\Estudos Web Dev\\Estudos de C# e .NET\\C# COMPLETO 2020-Udemy-Nelio\\ws-vs2019\\S17-Sist-Web-ASP-NET-CORE\\SalesWebMVCSQLServer\\SalesWebMVC-dotNet-Core-MSSQL\\SalesWebMVC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
